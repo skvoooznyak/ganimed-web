@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkganimed_web=self.webpackChunkganimed_web||[]).push([[915],{1585:e=>{e.exports=JSON.parse('{"permalink":"/ganimed-web/blog/tags/ganimed-wiki","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

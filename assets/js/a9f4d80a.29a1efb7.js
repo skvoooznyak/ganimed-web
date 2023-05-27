@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkganimed_web=self.webpackChunkganimed_web||[]).push([[6378],{6398:e=>{e.exports=JSON.parse('{"label":"facebook","permalink":"/ganimed-web/blog/tags/facebook","allTagsPath":"/ganimed-web/blog/tags","count":1}')}}]);
