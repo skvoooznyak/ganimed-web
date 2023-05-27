@@ -2,56 +2,42 @@
 sidebar_position: 2
 ---
 
-# Create a Document
+# Что такое документ
 
-Documents are **groups of pages** connected through:
+Документ это **группа страниц** соединенных между собой:
 
 - a **sidebar**
 - **previous/next navigation**
 - **versioning**
 
-## Create your first Doc
+## Создание первого документа
 
-Create a Markdown file at `docs/hello.md`:
+Создайте файл типа md `docs/hello.md`:
 
 ```md title="docs/hello.md"
 # Hello
 
-This is my **first Docusaurus document**!
+Это мой **первый документ** !
+```
+:::tip
+
+Вы можете использовать любой синтаксис md/mdx.
+
+:::
+
+Ярким примером будут таблицы:
 ```
 
-A new document is now available at [http://localhost:3000/docs/hello](http://localhost:3000/docs/hello).
-
-## Configure the Sidebar
-
-Docusaurus automatically **creates a sidebar** from the `docs` folder.
-
-Add metadata to customize the sidebar label and position:
-
-```md title="docs/hello.md" {1-4}
----
-sidebar_label: 'Hi!'
-sidebar_position: 3
----
-
-# Hello
-
-This is my **first Docusaurus document**!
+| Таблицы       | Это                | Круто |
+| ------------- |:------------------:| -----:|
+| столбец 3     | выровнен вправо    | $1600 |
+| столбец 2     | выровнен по центру |   $12 |
+| зебра-строки  | прикольные         |    $1 |
 ```
 
-It is also possible to create your sidebar explicitly in `sidebars.js`:
 
-```js title="sidebars.js"
-module.exports = {
-  tutorialSidebar: [
-    'intro',
-    // highlight-next-line
-    'hello',
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
-    },
-  ],
-};
-```
+| Таблицы       | Это                | Круто |
+| ------------- |:------------------:| -----:|
+| столбец 3     | выровнен вправо    | $1600 |
+| столбец 2     | выровнен по центру |   $12 |
+| зебра-строки  | прикольные         |    $1 |

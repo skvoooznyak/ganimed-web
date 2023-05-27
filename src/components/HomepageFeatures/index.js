@@ -2,45 +2,36 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
+
 const FeatureList = [
+
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: ' Lorem ipsum dolor sit amet',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        <img src= "https://kakahi.ru/upload/post/big/e4f7ec2836729668cdf34a1da3459a8b1513879310.jpg" alt="loh"></img>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nunc nisl. Maecenas bibendum ut metus eu rutrum. Aliquam ultricies et lorem vel lacinia. Sed id erat quis nisl iaculis.
       </>
     ),
   },
+
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: ' Lorem ipsum dolor sit amet',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        <img src= "https://kakahi.ru/upload/post/big/e4f7ec2836729668cdf34a1da3459a8b1513879310.jpg" alt="loh"></img>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nunc nisl. Maecenas bibendum ut metus eu rutrum. Aliquam ultricies et lorem vel lacinia. Sed id erat quis nisl iaculis.
       </>
     ),
   },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
+  
+
 ];
 
 function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
+
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
@@ -49,16 +40,30 @@ function Feature({Svg, title, description}) {
   );
 }
 
+
+function Discord(){
+  return(
+    <iframe src="https://discord.com/widget?id=1078027359032188958&theme=dark"
+     width="425" height="500" allowtransparency="true" frameborder=""
+     sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+
+  );
+}
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
-      <div className="container">
+      <div className="container" align="center">
         <div className="row">
+          <Discord></Discord>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
-        </div>
+          
+        </div> 
       </div>
+      
     </section>
+    
   );
 }
